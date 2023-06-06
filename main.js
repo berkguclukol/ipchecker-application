@@ -7,15 +7,16 @@ const electron = require("electron");
 
 const createWindow = () => {
     const mainWindow = new BrowserWindow({
-        width: 900,
-        height: 600,
+        width: 550,
+        height: 580,
         autoHideMenuBar: true,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
     })
-    mainWindow.loadFile('index.html')
-    mainWindow.webContents.openDevTools()
+    mainWindow.setIcon(path.join(__dirname, "assets/icon.png"));
+    mainWindow.loadFile('public/index.html')
+    //mainWindow.webContents.openDevTools()
 }
 app.whenReady().then(() => {
     createWindow()

@@ -1,4 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
-    //document.getElementById("response").innerHTML = process;
+
+
+    //document.getElementById("response").innerHTML = app.getVersion();
     //console.log(process);
 })

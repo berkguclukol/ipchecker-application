@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="h-full w-full">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Control App!</title>
+    <link rel="stylesheet" href="../assets/bootstrap.min.css">
+</head>
+<body onload="getIPInfo()" class="d-flex align-items-center justify-content-center w-100 vh-100 overflow-hidden">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="bg-primary  text-center p-3 rounded-1 mb-3">
+                <h1 class="m-0 text-white" id="ipAddress"></h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="d-grid">
+                <button class="btn btn-secondary mb-3 btn-sm" onclick="getIPInfo()">REFRESH</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 mb-3">
+            <label for="latitude" class="form-label">Latitude</label>
+            <input type="text" class="form-control form-control-sm" id="latitude" placeholder="" readonly>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="longitude" class="form-label">Longitude</label>
+            <input type="text" class="form-control form-control-sm" id="longitude" placeholder="" readonly>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="countryName" class="form-label">Country Name</label>
+            <input type="text" class="form-control form-control-sm" id="countryName" placeholder="" readonly>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="countryCode" class="form-label">Country Code</label>
+            <input type="text" class="form-control form-control-sm" id="countryCode" placeholder="" readonly>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="timeZone" class="form-label">Time Zone</label>
+            <input type="text" class="form-control form-control-sm" id="timeZone" placeholder="" readonly>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="zipCode" class="form-label">Zip Code</label>
+            <input type="text" class="form-control form-control-sm" id="zipCode" placeholder="" readonly>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="cityName" class="form-label">City Name</label>
+            <input type="text" class="form-control form-control-sm" id="cityName" placeholder="" readonly>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="regionName" class="form-label">Region Name</label>
+            <input type="text" class="form-control form-control-sm" id="regionName" placeholder="" readonly>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h6 id="lastUpdate"></h6>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script defer src="../index.js"></script>
+</body>
+</html>
